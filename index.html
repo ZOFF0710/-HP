@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>東京中央銀行 | ミニマリスト銀行</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="東京中央銀行 ロゴ"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">特徴</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">操作方法</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">お客様の声</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#">
+              口座を開設
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          銀行業務が
+          <!-- Green highlight effect -->
+          <span class="highlight">ミニマリズム</span>
+          と出会うとき
+        </h1>
+        <h4>シンプルな生活のためのシンプルな銀行体験。</h4>
+        <button class="btn--text btn--scroll-to">詳細を見る &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="ミニマリスト銀行アイテム"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">特徴</h2>
+        <h3 class="section__header">
+          モダンな銀行に必要なすべて、そしてそれ以上。
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="コンピューター"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">完全デジタル銀行</h5>
+          <p>
+            完全にデジタル化された銀行サービスを提供します。オンラインで簡単に操作できます。
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">お金が成長するのを見守る</h5>
+          <p>
+            貯蓄を効率的に運用し、あなたのお金を増やします。安心してご利用ください。
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="植物"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="クレジットカード"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">無料デビットカード付き</h5>
+          <p>
+            簡単で便利な無料デビットカードをお届けします。日常の買い物もスムーズに。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">操作方法</h2>
+        <h3 class="section__header">
+          できるだけシンプルに、しかしシンプルすぎないように。
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>瞬時送金
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>瞬時ローン
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>瞬時解約
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            誰にでも即座に送金！手数料なし、隠れ費用なし。
+          </h5>
+          <p>
+            簡単な操作で、どこへでも素早く送金できます。追加手数料はありません。
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            家を買う、または夢を叶える即座のローン。
+          </h5>
+          <p>瞬時に資金を手に入れ、夢を実現するためのサポートをします。</p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            アカウントが不要ですか？問題ありません！即座に解約できます。
+          </h5>
+          <p>アカウントの解約手続きは非常に簡単で、ストレスフリーです。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">まだ迷っていますか？</h2>
+        <h3 class="section__header">
+          何百万人もの東京中央銀行ユーザーがすでに生活を簡素化しています。
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">最高の財務的決断！</h5>
+            <blockquote class="testimonial__text">
+              東京中央銀行を選んで、すべてがスムーズになりました！迅速なサービスと利便性が素晴らしいです。
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">アーラブ・リン</h6>
+              <p class="testimonial__location">サンフランシスコ、アメリカ</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              完全なミニマリストになるための最後の一歩
+            </h5>
+            <blockquote class="testimonial__text">
+              東京中央銀行は私の生活を大きく変えました。シンプルさと効率性が完璧です！
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">ミヤ・マイルズ</h6>
+              <p class="testimonial__location">ロンドン、イギリス</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              ついに昔ながらの銀行から解放されました
+            </h5>
+            <blockquote class="testimonial__text">
+              これ以上便利な銀行サービスはありません！東京中央銀行で安心して取引できます。
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">フランシスコ・ゴメス</h6>
+              <p class="testimonial__location">リスボン、ポルトガル</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          東京中央銀行に参加するのに最適な日は1年前でした。次に最適なのは今日です！
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">今すぐ無料口座を開設！</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">会社概要</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">料金</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">利用規約</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">プライバシーポリシー</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">採用情報</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">ブログ</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">お問い合わせ</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="ロゴ" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; メールでお問い合わせください:
+        <a href="mailto:luckyzoff01@eagle.sophia.ac.jp" class="footer__link"
+          >luckyzoff01@eagle.sophia.ac.jp</a
+        >
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        あなたの銀行口座を開設 <br />
+        わずか<span class="highlight">5分</span>で
+      </h2>
+      <form class="modal__form">
+        <label>名</label>
+        <input type="text" />
+        <label>姓</label>
+        <input type="text" />
+        <label>メールアドレス</label>
+        <input type="email" />
+        <button class="btn">次のステップ &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
